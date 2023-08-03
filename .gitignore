@@ -1,7 +1,0 @@
-*
-!.gitignore
-!.github
-!.github/**/*
-!Makefile
-!README.md
-!cheatsheet.md
