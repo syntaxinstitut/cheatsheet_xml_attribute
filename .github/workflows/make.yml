@@ -1,0 +1,19 @@
+name: make
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          sudo apt-get update -y
+          sudo apt-get install -y pandoc texlive-latex-recommended
+          make
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -u
+          git commit -m "Generated files"
+          git push origin main
