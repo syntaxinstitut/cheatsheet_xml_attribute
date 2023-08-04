@@ -29,11 +29,3 @@
 
 ## LinearLayout (lineares Layout):
    - `android:orientation`: Die Ausrichtung der enthaltenen Views (horizontal oder vertikal).
-
-## RelativeLayout (relatives Layout):
-   - `android:layout_alignParentTop`: Die View oben im Container ausrichten.
-   - `android:layout_alignParentBottom`: Die View unten im Container ausrichten.
-   - `android:layout_alignParentStart`: Die View links (start) im Container ausrichten.
-   - `android:layout_alignParentEnd`: Die View rechts (end) im Container ausrichten.
-   - `android:layout_above`: Die View über einer anderen View positionieren.
-   - `android:layout_below`: Die View unterhalb einer anderen View positionieren.
