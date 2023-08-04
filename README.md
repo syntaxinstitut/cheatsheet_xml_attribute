@@ -29,3 +29,12 @@
 
 ## LinearLayout (lineares Layout):
    - `android:orientation`: Die Ausrichtung der enthaltenen Views (horizontal oder vertikal).
+
+## CardView:
+  - `android:layout_width` und `android:layout_height`: Definieren die Breite und Höhe der Card View. Sie können entweder feste Werte, `match_parent` oder `wrap_content` sein.
+  - `android:layout_margin`: Definiert den Abstand um die Card View herum, um sie von anderen Views zu trennen.
+  - `android:cardElevation`: Steuert die Schattenwirkung der Card View, um ein 3D-Erscheinungsbild zu erzeugen.
+  - `android:cardCornerRadius`: Setzt die Eckenradius der Card View, um sie abgerundet erscheinen zu lassen.
+  - `android:cardBackgroundColor`: Definiert die Hintergrundfarbe der Card View.
+  - `android:foreground`: Setzt eine Vordergrund-Zeichnung, die über der Karte gerendert wird. (optional)
+  - `android:clickable` und `android:focusable`: Legen fest, ob die Card View klickbar bzw. fokussierbar ist.
