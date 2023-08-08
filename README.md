@@ -38,3 +38,27 @@
   - `android:cardBackgroundColor`: Definiert die Hintergrundfarbe der Card View.
   - `android:foreground`: Setzt eine Vordergrund-Zeichnung, die über der Karte gerendert wird. (optional)
   - `android:clickable` und `android:focusable`: Legen fest, ob die Card View klickbar bzw. fokussierbar ist.
+
+## [NavHostFragment](https://developer.android.com/reference/kotlin/androidx/navigation/fragment/NavHostFragment)
+- `android:id`: Eine eindeutige ID für das `NavHostFragment`, die verwendet werden kann, um darauf zuzugreifen.
+- `android:name`: Der Name der Navigationsgraph-Ressource, die in diesem `NavHostFragment` gehostet werden soll. Dieser Wert sollte im Format `navigation/{graphResourceName}` angegeben werden, wobei `{graphResourceName}` der Name deiner Navigationsgraph-Ressource ist.
+- `app:defaultNavHost`: Ein boolescher Wert (`true` oder `false`), der angibt, ob dieses `NavHostFragment` der Standard-Navigationshost für die Aktivität sein soll. Wenn es auf `true` gesetzt ist, wird das Fragment den Rück-Taste-Events der Aktivität reagieren.
+- `app:navGraph`: Veraltet. Verwende stattdessen `android:name`, um den Navigationsgraphen anzugeben.
+- `app:navController`: Ein optionales Attribut, das verwendet werden kann, um einen externen `NavController` mit diesem `NavHostFragment` zu verknüpfen. Dies ermöglicht die Verwendung desselben `NavController`s in mehreren Hosts.
+
+<details>
+<summary>
+Beispiel
+</summary>
+
+```xml
+<fragment
+    android:id="@+id/nav_host_fragment"
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:defaultNavHost="true"
+    app:navGraph="@navigation/my_navigation_graph" />
+```
+
+</details
